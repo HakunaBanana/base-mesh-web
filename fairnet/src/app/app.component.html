@@ -1,0 +1,43 @@
+<div class="HotSpotWrapper"><img src="../assets/fairnet-stand-cropped.jpg" alt="Image Map">
+  <!-- Stele 1 -->
+  <div class="HotSpot bullet" (click)="updateModal('Stele1')" style="top: 65%; right: 20%;" data-toggle="modal" data-target="#myModal"></div>
+
+  <!-- Stele 4 -->
+  <div class="HotSpot bullet" (click)="updateModal('Stele4')" style="top: 46%; right: 71%;" data-toggle="modal" data-target="#myModal"></div>
+
+  <!-- Animated Tour -->
+  <div class="HotSpot bullet" (click)="updateModal('AnimatedTour')" style="top: 74%; right: 48%;" data-toggle="modal" data-target="#myModal"></div>
+
+  <!-- Info Login -->
+  <div class="HotSpot bullet" (click)="updateModal('InfoLogin')" style="top: 57.5%; right: 87%;" data-toggle="modal" data-target="#myModal"></div>
+
+  <!-- Info Chat -->
+  <div class="HotSpot bullet" (click)="updateModal('InfoChat')" style="top: 60%; right: 80%;" data-toggle="modal" data-target="#myModal"></div>
+
+  <!-- Livestream -->
+  <div class="HotSpot bullet" (click)="updateModal('LiveStream')" style="top: 20%; right: 20%;" data-toggle="modal" data-target="#myModal"></div>
+
+  <!-- IPad -->
+  <div class="HotSpot bullet" (click)="updateModal('Ipad')" style="top: 50%; right: 40%;" data-toggle="modal" data-target="#myModal"></div>
+
+</div>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">{{title}}</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body" *ngIf="text !== null">
+        {{text}}
+      </div>
+    </div>
+  </div>
+</div>

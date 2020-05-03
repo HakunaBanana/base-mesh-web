@@ -1,0 +1,35 @@
+img {
+    width: 100vw;
+    height: 100vh;
+}
+
+.HotSpotWrapper {
+	display: block;
+	position: relative;
+}
+
+.HotSpotWrapper .HotSpot {
+	position: absolute;
+	display: block;
+}
+.bullet {
+	width: 2.7%;
+	height: 4%;
+	background-color: #436513;
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 50%;
+	opacity: 0.6;
+}
+
+
+.modal-content {
+	background-color: #436513;
+	opacity: 0.7;
+	color: white;
+}
+.close {
+	color: white;
+	opacity: 1;
+}
